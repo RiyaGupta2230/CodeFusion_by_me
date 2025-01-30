@@ -1,0 +1,579 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+.inputBox{
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: rgb(22, 22, 22);
+  border-radius:5px ;
+  display: flex;
+  align-items: center;
+}
+
+.inputBox input{
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+}
+
+.btnBlue{
+  background-color: #00AEEF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius:50px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+}
+
+.btnBlue:hover{
+  background-color: #00afef90;
+}
+
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.lightMode .editorNavbar{
+  background-color: #daf3fc;
+  box-shadow: #000000;
+  box-shadow: 1px;
+  color: black;
+}
+
+.lightMode .download{
+  background-color:#00AEEF;
+  color: black;
+}
+
+.lightMode .tabNav{
+  background-color: #c8ebf8;
+  color: black;
+}
+
+.lightMode .tabNav .tab{
+  background-color: #c8ebf8 ;
+}
+
+.lightMode {
+  background-color: white;
+  color: black;
+}
+
+.lightMode .editorNavbar .logo {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.lightMode .navbar .logo {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.lightMode{
+  color: #000000;
+  background-color:white;
+}
+
+.lightMode .navbar{
+  color: #000000;
+  background-color:#daf3fc;
+}
+
+.lightMode .dropDownNavbar{
+  color: #000000;
+  background-color: white;
+}
+
+.lightMode .linebreak{
+  border-color: #000000;
+}
+
+.lightMode .gridCard{
+  color: #000000;
+  background-color: #daf3fc;
+}
+
+.lightMode .listCard{
+  color: #000000;
+  background-color: #daf3fc;
+}
+
+.lightMode .inputBox{
+  color: #000000 !important;
+  background-color: #daf3fc;
+}
+
+.lightMode .inputBox .input{
+  color: #000000 !important;
+}
+
+.lightMode .createModel{
+  background-color: white;
+}
+
+.lightMode .createModel .inputBox{
+  color: #000000 !important;
+  background-color: #daf3fc !important; 
+}
+
+.lightMode .createModel .inputBox .input{
+  color: #000000 !important; 
+}
+
+.lightMode .createModelcancel{
+  color: #000000;
+  background-color: #daf3fc !important;
+}
+
+.lightMode .mainModel{
+  background-color: white !important;
+}
+
+.lightMode .mainModel .cancel{
+  color: #000000;
+  background-color: #daf3fc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.lightMode .about{
+  color: #000000;
+  background-color: #c8ebf8;
+}
+
+.lightMode .contact{
+  color: #000000;
+  background-color: #dcf3fc;
+}
+
+.lightMode .services{
+  color: #000000;
+  background-color: #f0f6f8;
+}
+
+/* Customize the scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Optional: rounded corners for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker color for the thumb when hovered */
+}
+
+::-webkit-scrollbar-corner {
+  background: #f1f1f1; /* Background color for the corner where the horizontal and vertical scrollbars meet */
+}
+
+
+/*Fun with services*/
+/* General Section Styles */
+/* General Section Styles */
+/* About Section */
+/* About Section */
+.about {
+  background-color: #2c3e50;
+  color: white;
+  padding: 3rem 100px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.about h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+  animation: slideInAbout 1s ease-out;
+}
+
+@keyframes slideInAbout {
+  0% {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.about h3::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 3px;
+  background: #f39c12;
+  bottom: -10px;
+  left: 10%;
+  animation: slideInUnderline 1.5s ease-out;
+}
+
+@keyframes slideInUnderline {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 80%;
+  }
+}
+
+.about p {
+  font-size: 1rem;
+  text-align: center;
+  color: #6f6f6f;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  animation: fadeInAbout 1s ease-out;
+}
+
+
+@keyframes fadeInAbout {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* Contact Section */
+.contact {
+  background-color: #202020;
+  color: white;
+  padding: 3rem 10px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+  animation: bounceIn 1s ease-out;
+}
+
+@keyframes bounceIn {
+  0% {
+      transform: scale(0.5);
+      opacity: 0;
+  }
+  60% {
+      transform: scale(1.2);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.contact p {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  color: #6f6f6f;
+}
+
+.contact a {
+  color: #f39c12;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #e67e22;
+}
+
+.contact p span {
+  font-weight: bold;
+}
+
+/* Adding Floating Animation to Button */
+.contact button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 12px 30px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  animation: floatButton 2s ease-in-out infinite;
+}
+
+@keyframes floatButton {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.contact button:hover {
+  background-color: #e67e22;
+  transform: scale(1.05);
+}
+
+.contact button:active {
+  transform: scale(1);
+}
+
+.services {
+  background-color: #1A1919;
+  color: white;
+  padding: 4rem 100px;
+  transition: all 0.3s ease;
+}
+
+.services h3 {
+  font-size: 1.6rem; /* Reduced font size */
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.services h3::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 3px;
+  background: #f1c40f;
+  bottom: -10px;
+  left: 10%;
+  animation: slideIn 1.5s ease-out;
+}
+
+@keyframes slideIn {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 80%;
+  }
+}
+
+.services p {
+  font-size: 1rem; /* Reduced font size */
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  color: #bbb;
+}
+
+.lightMode .services p{
+  color: #b3b1b1;
+}
+
+.services ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.services ul li {
+  margin: 12px 0; /* Reduced margin */
+  font-size: 1rem; /* Reduced font size */
+  color: #5f5c5c;
+  position: relative;
+  padding-left: 35px; /* Adjusted padding for proper space between text and checkmark */
+  transition: transform 0.3s ease;
+}
+
+
+.lightMode .services ul li {
+  color: #cdcbcb;
+}
+
+
+
+.services ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0px;
+  top: 0;
+  color: #f39c12;
+  font-size: 1.2rem; /* Reduced checkmark size */
+  transition: color 0.3s ease;
+}
+
+.services ul li:hover {
+  transform: translateX(10px);
+  color: #f1c40f;
+}
+
+.services ul li:hover::before {
+  color: #e67e22;
+}
+
+.services h4 {
+  font-size: 1.3rem; /* Reduced font size */
+  text-align: center;
+  color: #f39c12;
+  margin-top: 30px;
+}
+
+.services button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 25px; /* Adjusted padding for smaller button */
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem; /* Reduced font size */
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.services button:hover {
+  background-color: #f39c12;
+  transform: translateY(-5px);
+}
+
+.services button:active {
+  transform: translateY(2px);
+}
+
+
+/* Fun and Modern CSS for CodeFusion */
+
+/* Smooth fade-in effect for the entire page */
+body {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Navbar Styling */
+
+.lightMode {
+  background: #f5f5f5;
+  color: #333;
+}
+
+.lightMode .navbar {
+  background: linear-gradient(135deg, #d3eff9, #b5e6f8);
+}
+
+
+.navbar {
+  background: linear-gradient(135deg, #0a2340, #041222);
+  padding: 15px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.navbar:hover {
+  filter: brightness(1.1);
+}
+
+/* Light Mode Styles */
+
+
+.lightMode .btnBlue:not(.addButton) {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  color: #333;
+}
+
+.lightMode .btnBlue:not(.addButton):hover {
+  box-shadow: 0 5px 15px rgba(162, 233, 251, 0.5);
+}
+
+.lightMode .input {
+  background: white;
+  color: #333;
+  border-color: #6bb9f0;
+}
+
+/* Buttons (except add button) */
+.btnBlue:not(.addButton) {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 10px 16px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s;
+}
+
+.btnBlue:not(.addButton):hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(118, 75, 162, 0.5);
+}
+
+/* Project Cards */
+.cards div {
+  transition: box-shadow 0.3s;
+}
+
+.cards div:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Fields */
+.input {
+  background: #202020;
+  color: white;
+  border: 2px solid transparent;
+  padding: 10px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+
