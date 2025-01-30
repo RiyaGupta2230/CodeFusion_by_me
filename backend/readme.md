@@ -1,3 +1,3 @@
-npm i
-npm i mongoose jsonwebtoken cors bcryptjs
+npm i 
+npm i mongoose jsonwebtoken cors bcryptjs 
 npx nodemon
